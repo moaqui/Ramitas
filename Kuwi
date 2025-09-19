@@ -1,30 +1,30 @@
-}// The perfect camping cycle
-while(camping.is_active()) {
+// El ciclo perfecto de camping
 while(camping.is_active()) {
 
-    // A 'pintinchis' moment, but 'pitutis' as well...
-if (is_pintinchis && is_pitutis) {
-      console.log("Alarm sounding: First Day of My Life");
-   }
->>
->>     // If the state is 'kiwi', the plan is perfect.
->>     if (Kiwi.is_kiwi() === kiwi) {
->>         console.log("Validation: the cycle works perfectly!");
->>         selfie.take();
->>     }
->>
->>     // If the 'socks' alarm is triggered...
->>     if (socks.put_on(Kiwi)) {
->>         console.log("Alert! Status: ¿nos vamos?");
->>         adventure.start();
->>     }
->>
->>     // If the state is 'sick', the plan changes.
->>     if (Kiwi.is_sick()) {
->>         adventure.pause();
->>         support.activate();
->>         console.log("Priority: recover the patient.");
->>         console.log("Barely we made it out of Susin!");
->>     }
->>
->>     //... (the rest of the code follows)
+    // Un momento 'pintinchis', pero también 'pitutis'...
+    if (is_pintinchis && is_pitutis) {
+        console.log("Alarma sonando: First Day of My Life");
+    }
+
+    // Si el estado es 'kiwi', el plan es perfecto.
+    if (Kiwi.is_kiwi() === "kiwi") {
+        console.log("Validación: ¡el ciclo funciona perfectamente!");
+        selfie.take();
+    }
+
+    // Si se activa la alarma de 'calcetines'...
+    if (socks.put_on(Kiwi)) {
+        console.log("Alerta! Estado: ¿nos vamos?");
+        adventure.start();
+    }
+
+    // Si el estado es 'malita', el plan cambia.
+    if (Kiwi.is_sick()) {
+        adventure.pause();
+        support.activate();
+        console.log("Prioridad: recuperar a la paciente.");
+        console.log("¡Casi no salimos de Susin!");
+    }
+
+    // ... (el resto del código sigue)
+}
